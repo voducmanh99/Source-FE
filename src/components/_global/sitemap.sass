@@ -1,0 +1,53 @@
+.AspNet-TreeView
+	line-height: 1.5
+	> ul
+		columns: 3 auto
+		margin: 10px 0 0
+		padding-bottom: 25px
+		> .AspNet-TreeView-Root
+			margin-bottom: 26px
+			break-inside: avoid-column
+			> a
+				display: inline-block
+				font-size: 20px
+				font-weight: 600
+				padding-bottom: 7px
+			.AspNet-TreeView-Collapse
+				display: none
+			> ul
+				> li
+					padding-bottom: 7px
+					font-size: 18px
+					color: #06c
+					> a
+						font-weight: 500
+						display: inline-block
+					&.AspNet-TreeView-Parent
+						> a
+							margin-bottom: 7px
+						> ul
+							list-style: disc
+							padding-left: 1.25em
+							> li
+								font-size: 16px
+								margin-bottom: 7px
+	@media screen and ( max-width: 768.98px )
+		> ul
+			column-count: 1
+
+.sitemap
+	padding: r(40px) 0
+	a
+		&:hover
+			text-decoration: underline
+
+.sitemap-heading
+	height: r(52px)
+	border-bottom: 1px solid #ccc
+	display: flex
+	align-items: center
+	margin-bottom: r(32px)
+	h1
+		font-weight: 600
+		font-size: r(32px)
+		line-height: 1.5

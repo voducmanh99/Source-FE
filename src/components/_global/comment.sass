@@ -1,0 +1,99 @@
+.product-review
+	font-weight: 500
+	.product-review-wrap
+		+layout-col(20px)
+	.medium-rating
+		display: flex
+		gap: r(8px)
+		align-items: center
+		@extend .body-3
+		> *
+			display: inline-block
+		.point,.total-comment
+			+text(primary-500)
+	.charts
+		+layout-col(20px)
+		.chart
+			+layout-row(20px)
+			align-items: center
+			@extend .body-3
+			label
+				+flex-width(44px)
+			.progress
+				width: r(142px)
+				height: r(8px)
+				border-radius: 99px
+				+bg(gray-200)
+				overflow: hidden
+				.progress-bar
+					+bg(secondary-700)
+			.percent
+				flex: auto
+
+.comment-form
+	.module-title
+		@extend .body-3
+		margin-bottom: r(20px)
+	.row
+		+gap-override(20px)
+
+.comment-list
+	margin-top: r(32px)
+	padding-top: r(32px)
+	border-top: 1px solid color(gray-50)
+
+.journalItems
+	+layout-col(32px)
+	.cmt-item
+		+layout-col(16px)
+		.item,.cmt-area 
+			+layout-row(20px)
+			.img
+				+flex-width(60px)
+				height: r(60px)
+				border-radius: 50%
+				overflow: hidden
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			.caption,.jsummary
+				+layout-col(8px)
+				flex: 1
+				@extend .body-3
+				.name
+					@extend .body-2
+					+layout-row(8px)
+					gap: r(8px)
+					font-weight: 700
+				.mod
+					display: inline-block
+					padding: r(4px) r(8px)
+					+bg(primary-500)
+					+text(white)
+					@extend .body-5
+					font-weight: 700
+					border-radius: r(4px)
+				time,abbr
+					+text(gray-300)
+					@extend .body-5
+			.cmreply
+				text-decoration: underline
+				+text(primary-500)
+		.jcmt
+			margin-left: r(84px)
+			+content-margins
+				margin-top: r(20px)
+			.row
+				+gap-override(20px)
+		.cmteditarea,.cmtbtn
+			display: none
+		.cmt-area 
+			padding: r(20px)
+			+bg(gray-100)
+			.jsummary
+				margin-left: 0
+			.iconcom
+				display: none
+			.cmlike
+				display: none

@@ -1,0 +1,13 @@
+.tabs-nav,.heading-nav ul
+	+layout-row(32px)
+	overflow: auto
+	li
+		a
+			@extend .body-4
+			+text(gray-300)
+			letter-spacing: 0.08em
+			white-space: nowrap
+		&.active
+			a
+				text-decoration: underline
+				+text(primary-500)

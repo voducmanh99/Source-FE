@@ -1,0 +1,160 @@
+.about-nav
+	+trans-all
+	ul
+		display: flex
+		justify-content: space-between
+		overflow: auto
+		gap: r(20px)
+		li
+			a
+				height: r(44px)
+				display: flex
+				align-items: center
+				@extend .body-3
+				+text(gray-400)
+				font-weight: 500
+				border-bottom: 1px solid transparent
+				+trans-all
+				white-space: nowrap
+			&.active
+				a
+					border-bottom: 1px solid color(primary-500)
+					+text(primary-500)
+	
+.is-sticky
+	.about-nav
+		+bg(white)
+
+.about-1
+	padding: r(80px) 0 r(64px)
+	position: relative
+	z-index: 1
+	+mq-max(md)
+		padding: r(40px) 0
+		+text(white)
+	&::before
+		+pseudo
+		top: 0
+		left: 0
+		width: 50%
+		+bg(primary-500)
+		border-radius: 0px 0px r(124px) 0px
+		height: 100%
+		z-index: -1
+		+mq-max(md)
+			width: 100%
+			border-radius: 0
+
+.about-2
+	padding: r(80px) 0 r(40px)
+	+mq-max(md)
+		padding: r(40px) 0
+	.row
+		border: 1px solid color(primary-500)
+		overflow: hidden
+	.item-col
+		&:not(.first-column)
+			border-left: 1px solid color(primary-500)
+		&.col-lg-3
+			border-bottom: 1px solid color(primary-500)
+
+.about-3
+	position: relative
+	.content-container
+		pointer-events: none
+		padding: r(32px) 0
+		+mq-min(lg)
+			padding: 0
+			position: absolute
+			width: 100%
+			+center(Y)
+	.content
+		pointer-events: all
+	.img
+		position: relative
+		display: block
+		.icon
+			position: absolute
+			+center(both)
+			+circle(80px)
+			display: flex
+			+flex-center
+			+bg(primary-500)
+			+text(white)
+			+fz(32px)
+			border: 1px solid color(primary-200)
+
+.year-dot-slider
+	position: relative
+	&::before
+		+pseudo
+		height: r(6px)
+		+bg(white)
+		top: r(8px)
+		left: 0
+		border-radius: 999px
+		width: 100%
+	.year-dot
+		text-align: center
+		cursor: pointer
+		position: relative
+		height: r(56px)
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		.dot
+			position: absolute
+			top: r(2px)
+			+center(X)
+			+trans-all
+			span
+				display: block
+				width: r(9px)
+				height: r(18px)
+				background-image: url(../img/history-icon.svg)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+				margin: 0 auto
+				+trans-all
+		.year
+			margin-top: r(8px)
+			font-weight: 700
+			@extend .body-2
+			+text(primary-300)
+			+trans-all
+	.swiper-slide-thumb-active
+		.year-dot
+			.dot
+				top: 0
+				span
+					width: r(15px)
+					height: r(24px)
+					background-image: url(../img/history-icon-active.svg)
+			.year
+				margin-bottom: r(-4px)
+				+fz(24px)
+				+text(primary-500)
+
+.year-content-slider
+	padding: r(20px)
+	border: 1px solid color(primary-400)
+	border-radius: r(12px)
+	// .year-content
+	// 	.img
+	// 		figure
+	// 			+res-ratio(634,356)
+	// 			border-radius: r(12px)
+	// 			overflow: hidden
+
+.about-6
+	.item
+		padding: r(32px)
+		.content
+			text-align: justify
+		.icon
+			width: r(96px)
+			figure
+				+res-ratio(1,1)
+		+mq-min(lg)
+			min-height: r(360px)

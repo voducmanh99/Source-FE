@@ -1,0 +1,52 @@
+.fixed-stuff
+	position: fixed
+	z-index: 50
+	bottom: r(140px)
+	right: r(4px)
+	ul
+		li
+			& + li
+				margin-top: r(4px)
+			.btn-circle
+				+flex-center
+				+reset-link
+				display: inline-flex
+				+box(64px)
+				font-size: r(12px)
+				transition: 0.3s all
+				+bg(gray-300)
+				+text(white)
+				flex-direction: column
+				gap: r(4px)
+				em
+					font-size: r(24px)
+			&.has-tooltip
+				position: relative
+				.btn-circle
+					position: relative
+					z-index: 2
+				.tooltip
+					position: absolute
+					right: 0
+					top: 0
+					bottom: 0
+					white-space: nowrap
+					display: flex
+					align-items: center
+					justify-content: center
+					flex-direction: column
+					+bg(white)
+					+text(secondary-500)
+					border-radius: 999px
+					z-index: 1
+					padding: 0
+					overflow: hidden
+					opacity: 0
+					pointer-events: none
+					+trans-all
+
+				&:hover
+					.tooltip
+						opacity: 1
+						pointer-events: all
+						padding: 0 r(80px) 0 r(30px)

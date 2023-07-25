@@ -1,0 +1,28 @@
+$container-padding: r(16px)
+$container-max-width: 96vw
+$container-3xl-width: r(1344px)
+$container-2xl-width: 88vw
+$container-xl-width: 90vw
+$container-lg-width: 92vw
+$container-md-width: 94vw
+$container-sm-width: 96vw
+
+.container
+	width: 100%
+	max-width: $container-max-width
+	padding-right: $container-padding
+	padding-left: $container-padding
+	margin-right: auto
+	margin-left: auto
+	+mq-min(sm)
+		max-width: $container-sm-width
+	+mq-min(md)
+		max-width: $container-md-width
+	+mq-min(lg)
+		max-width: $container-lg-width
+	+mq-min(xl)
+		max-width: $container-xl-width
+	+mq-min(2xl)
+		max-width: $container-2xl-width
+	+mq-min(3xl)
+		max-width: $container-3xl-width

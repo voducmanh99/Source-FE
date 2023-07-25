@@ -1,0 +1,26 @@
+section.home-6.section
+	.container
+		.section-heading-nav.flex.justify-between.items-center.flex-wrap.gap-12.mb-lg-15.mb-6
+			h2.heading-2.text-primary-500.font-bold Tin tức - Sự kiện
+			.heading-nav
+				ul
+					li.active
+						a(href="#") Tất cả
+					li
+						a(href="#") Tin công ty
+					li
+						a(href="#") Tin thị trường
+		.row
+			-for(i=0;i<4;i++)
+				.col-lg-3.col-6
+					.news-item.news-item-small.news-item-small-reverse
+						.news-item-img
+							figure
+								a(href="#") 
+									img(src="./img/news.png", alt="")
+						.news-item-caption.pt-5
+							.news-item-date 02-03-2023
+							.news-item-title
+								a(href="#") Công nghệ – quy trình sản xuất nhựa phổ biến hàng đầu 
+							a(href="#").view-more.text-primary-500
+								span.fal.fa-arrow-right-long

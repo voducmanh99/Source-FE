@@ -1,0 +1,24 @@
+
+@mixin color-modifiers($attribute: 'color', $prefix: '-')
+	@each $name, $hex in $colors
+		&#{$prefix}#{$name}
+			#{$attribute}: $hex
+
+@mixin background-modifiers($attribute: 'background', $prefix: '-')
+	@each $name, $hex in $colors
+		&#{$prefix}#{$name}
+			#{$attribute}: $hex
+
+@mixin box-shadow-modifiers($attribute: 'box-shadow', $prefix: '-')
+	@each $name, $value in $shadow
+		&#{$prefix}#{$name}
+			#{$attribute}: $value
+
+.text
+	@include color-modifiers($prefix: '-')
+
+.background
+	@include background-modifiers($prefix: '-')
+
+.box-shadow
+	@include box-shadow-modifiers($prefix: '-')

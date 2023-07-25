@@ -1,0 +1,206 @@
+.flex
+	display: flex
+.inline-flex
+	display: inline-flex
+.flex-wrap
+	flex-wrap: wrap
+.flex-wrap-reverse
+	flex-wrap: wrap-reverse
+.flex-column
+	flex-direction: column
+.flex-column-reverse
+	flex-direction: column-reverse
+.flex-row
+	flex-direction: row
+.flex-row-reverse
+	flex-direction: row-reverse
+.flex-center
+	justify-content: center
+	align-items: center
+
+// --------------------------------
+
+// Justify Content
+
+// --------------------------------
+
+.justify-start
+	justify-content: flex-start
+.justify-end
+	justify-content: flex-end
+.justify-center
+	justify-content: center
+.justify-between
+	justify-content: space-between
+
+// --------------------------------
+
+// Align Items
+
+// --------------------------------
+
+.items-center
+	align-items: center
+.items-start
+	align-items: flex-start
+.items-end
+	align-items: flex-end
+.items-baseline
+	align-items: baseline
+
+// --------------------------------
+
+// Order
+
+// --------------------------------
+
+.order-1
+	order: 1
+.order-2
+	order: 2
+.order-3
+	order: 3
+
+// --------------------------------
+
+// Display
+
+// --------------------------------
+
+.block
+	display: block
+.inline-block
+	display: inline-block
+.inline
+	display: inline
+
+.hidden,.d-none, [hidden]
+	display: none
+
+.hidden-mobile
+	+remove(lg,max)
+
+.hidden-tablet
+	+remove(md,min)
+
+.hidden-desktop
+	+remove(lg,min)
+ // --------------------------------
+
+// Text Transform
+
+// --------------------------------
+
+.text-transform-none
+	text-transform: none
+.text-uppercase
+	text-transform: uppercase
+.text-capitalize
+	text-transform: capitalize
+
+// --------------------------------
+
+// Font Weight
+
+// --------------------------------
+
+.font-light
+	font-weight: 300
+.font-normal
+	font-weight: 400
+.font-medium
+	font-weight: 500
+.font-semibold
+	font-weight: 600
+.font-bold, .text-bold
+	font-weight: 700
+.font-extrabold
+	font-weight: 800
+
+// --------------------------------
+
+// Font Style
+
+// --------------------------------
+
+.font-italic
+	font-style: italic
+
+// --------------------------------
+
+// Text Align
+
+// --------------------------------
+
+.text-center
+	text-align: center
+.text-left
+	text-align: left
+.text-right
+	text-align: right
+.text-justify
+	text-align: justify
+
+// --------------------------------
+
+// Position
+
+// --------------------------------
+
+.position-relative
+	position: relative
+.position-absolute
+	position: absolute
+.position-fixed
+	position: fixed
+.position-sticky
+	position: sticky
+
+.top-0
+	top: 0
+.bottom-0
+	bottom: 0
+.left-0
+	left: 0
+.right-0
+	right: 0
+
+.rounded
+	border-radius: 50%
+
+.w-100
+	width: 100%
+
+.h-100
+	height: 100%
+
+.max-w-100
+	max-width: 100%
+
+.max-h-100
+	max-height: 100%
+
+// --------------------------------
+
+// Line heigth
+
+// --------------------------------
+
+.leading-tight
+	line-height: 1.25
+.leading-snug
+	line-height: 1.333333
+.leading-normal
+	line-height: 1.5
+.leading-relaxed
+	line-height: 1.625
+.leading-loose
+	line-height: 2
+
+.overflow-hidden
+	overflow: hidden
+
+.background-cover
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center

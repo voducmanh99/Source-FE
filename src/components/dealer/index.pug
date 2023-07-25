@@ -1,0 +1,35 @@
+section.section
+	.container
+		h1.heading-2.font-bold.mb-lg-8.mb-6.text-primary-500.text-center Phân phối
+		.filter-map.mb-5
+			.row
+				.form-group.col-lg-3.col-sm-6
+					select(name="").background-white
+						option Tỉnh/ Thành phố
+				.form-group.col-lg-3.col-sm-6
+					select(name="").background-white
+						option Quận/ Huyện
+				.form-group.col-lg-3.col-sm-6
+					input(type="text", name="", placeholder="Nhập từ khóa...")
+				.form-group.col-lg-3.col-sm-6
+					button.btn.btn-border-primary.w-100
+						span Tim kiếm
+		.row.equal-height
+			.col-lg-8
+				.dealer-result-wrapper
+					.dealer-result-list(data-simplebar data-simplebar-auto-hide="false")
+						ul#list
+							li.active
+								.dealer-item
+									p.name Văn phòng & Nhà xưởng
+									p.address 298 Hồ Học Lãm, phường An Lạc, quận Bình Tân, Thành phố Hồ Chí Minh, Việt Nam
+									p.phone 028 38762222
+							-for(i=0;i<6;i++)
+								li
+									.dealer-item
+										p.name Văn phòng & Nhà xưởng
+										p.address 298 Hồ Học Lãm, phường An Lạc, quận Bình Tân, Thành phố Hồ Chí Minh, Việt Nam
+										p.phone 028 38762222
+			.col-lg-4
+				.dealer-map.h-100
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6918269190487!2d106.68502971523694!3d10.98661755828192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d0e7f0c1298f%3A0xf04744b7b55b4e6e!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gVGjDqXAgVuG6oW4gVGjDoG5o!5e0!3m2!1svi!2s!4v1675393975475!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

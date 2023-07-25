@@ -1,0 +1,31 @@
+.cart
+	.menu-btn.cart-toggle
+		span.fal.fa-cart-flatbed-boxes.fz-20
+		.cart-text Giỏ hàng
+			span.cart-amount (5)
+	.cart-dropdown
+		.cart-container
+			.cart-heading
+				.cart-total
+					span Tổng cộng: 
+					strong.text-primary-500 2.950.000 đ
+			.cart-body
+				ul
+					-for(i=0;i<5;i++)
+						li
+							.cart-product.flex
+								a(href="#").img
+									img(src="./img/product.png")
+								.caption.leading-tight
+									a(href="#").name 
+										strong Sữa 
+										| rửa mặt trà xanh ngăn ngừa mụn dạng kem 120g
+									.flex.justify-between
+										.quantity Số lượng: 
+											span 1
+										.price 
+											strong 1.250.000 đ
+			.cart-button
+				a(href="#").btn.btn-secondary.btn-pill Tiến thành thanh toán
+			.cart-close
+				em.fal.fa-xmark

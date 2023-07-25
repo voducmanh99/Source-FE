@@ -1,0 +1,101 @@
+//Reset
+@import src/_plugins/sass-libraries/reset.sass
+@import src/_plugins/sass-libraries/util.scss
+// @import src/_plugins/sass-libraries/fluid-type.sass
+@import src/_plugins/sass-libraries/family.scss
+@import src/_plugins/sass-libraries/columnizer.scss
+@import src/_plugins/sass-libraries/svg-background.scss
+
+//Gridflex
+$gl-gridName: row
+$gl-gutter: r(32px)
+$gl-gutter-vertical: r(32px)
+$gl-mq-width: 'min-width'
+
+@import src/_plugins/gridlex/src/gridlex.scss
+
+// Global
+html
+	font-size: 3.6vw
+	+mq-min(sm)
+		font-size: 2.4vw
+	+mq-min(md)
+		font-size: 1.5vw
+	+mq-min(lg)
+		font-size: 1.2vw
+	+mq-min(3xl)
+		font-size: 1vw
+body
+	line-height: 1
+	font-family: 'Manrope'
+	+text(gray-900)
+	background: #F7F8FD
+	+mq-min(xl)
+		+fz(16px)
+
+*,*:before,*:after
+	box-sizing: border-box
+	outline: none
+
+a
+	text-decoration: none
+
++all-text-inputs
+	font-family: 'Manrope'
+	+placeholder
+		font-family: 'Manrope'
+
+.swiper-equal-height
+	.swiper-slide
+		height: auto
+		> *
+			height: 100%
+
+.fa-exclamation-triangle
+	line-height: 2.5
+	color: #ff3333
+	font-weight: 400
+	font-family: 'Bai Jamjuree', sans-serif
+	&:before
+		font-family: 'Font Awesome 6 Pro'
+
+.frm-btn-reset,.form-title
+	display: none !important
+
+.frm-btnwrap
+	.label
+		display: none
+
+.fancybox-close-small
+	+box(42px)
+	+bg(primary-500)
+	opacity: 1
+	display: flex
+	+flex-center
+	svg
+		width: r(24px)
+		height: r(24px)
+		path
+			fill: color(white)
+
+.relative.Module.Module-1407
+	pointer-events: all
+
+div[id*="popup_"]
+	padding: 0
+	overflow: visible
+	img
+		max-height: 90vh
+	.fancybox-close-small
+		right: auto
+		left: 100%
+		width: r(60px)
+		height: r(60px)
+		svg
+			height: r(60px)
+			width: r(60px)
+		+mq-max(lg)
+			right: 0
+			left: auto
+			bottom: 100%
+			top: auto

@@ -1,0 +1,26 @@
+.ratio-1-1
+    +res-ratio(1,1)
+
+.ratio-16-9
+    +res-ratio(16,9)
+
+.ratio-16-10
+    +res-ratio(16,10)
+
+.object-cover
+    img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+.object-contain
+    img
+        height: 100%
+        width: 100%
+        object-fit: contain
+
+[class*="ratio-"]
+    display: block
+    &.is-contain
+        img
+            object-fit: contain

@@ -1,0 +1,40 @@
+.home-banner
+	position: relative
+	.mouse-scroll-wrap
+		position: absolute
+		bottom: 0
+		width: 100%
+		transform: translateY(50%)
+		left: 0
+		z-index: 2
+		.mouse-scroll
+			display: block
+			width: r(64px)
+			margin-left: auto
+			figure
+				+res-ratio(1,1)
+
+.home-banner-slider
+	.swiper-pagination
+		position: absolute
+		+center(X)
+		bottom: r(12px)
+		display: flex
+		gap: r(10px)
+		align-items: flex-end
+		&-bullet
+			+trans-all
+			border-radius: 0
+			opacity: 0.5
+			+box(10px,10px)
+			background: white
+			&-active
+				height: r(20px)
+				opacity: 1
+	.banner-item
+		.img
+			figure
+				a
+					display: block
+					+mq-min(md)
+						+res-ratio(1920,500)

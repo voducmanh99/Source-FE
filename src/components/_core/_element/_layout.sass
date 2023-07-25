@@ -1,0 +1,25 @@
+.layout
+    > *
+        width: 100%
+
+$max: 48
+$offset: 4
+$unit: 'px' // Feel free to change the unit.
+@mixin list-loop($className,$breakpoint)
+    $i: 0
+    @while $i <= $max
+        @if $breakpoint != ''
+            #{$className + $breakpoint + $i}
+                +layout-col($i * 1px)
+                $i: $i + $offset
+        @else
+            #{$className + $i}
+                +layout-col($i + 1px)
+                $i: $i + $offset
+
+// Border-radius
+@include list-loop('.layout.is-gap-', '')
+
+@each $breakpoint in map-keys($breakpoints)
+    @include mq-min($breakpoint)
+        @include list-loop('.layout.is-gap-', #{$breakpoint + '-'})

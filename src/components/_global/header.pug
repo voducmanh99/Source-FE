@@ -1,0 +1,112 @@
+header.global-header
+	.container
+		.header-top.pt-3.pb-3.pb-lg-5
+			.row.items-center
+				.col-lg-3.col-4.logo-wrapper
+					.logo
+						a(href="#")
+							img(src="./img/logo.png", alt="")
+				.col-lg-5.search-wrapper
+					.pl-lg-10
+						.searchbox
+							input(type="text", name="", placeholder="Tìm kiếm")
+							button 
+								span.fal.fa-search
+				.col-lg-4.col-8
+					.header-util-list
+						.language-wrapper
+							.language
+								a(href="#").active VN 
+								a(href="#") EN 
+						//- .account-wrapper
+						//- 	.account.dropdown
+						//- 		a(href="#").menu-btn Đăng nhập / Đăng ký
+						//- 		.dropdown-content
+						//- 			ul
+						//- 				li
+						//- 					a(href="#") Tài khoản của tôi
+						//- 				li
+						//- 					a(href="#") Đăng xuất
+						//- .cart-wrapper
+						//- 	include ./cart-flyout.pug
+						.search-toggle.menu-btn.hidden-desktop
+							span.fal.fa-search
+						.menu-toggle.menu-btn.hidden-desktop
+							span.fal.fa-bars
+		.header-bottom.position-relative
+			.menu-wrapper
+				.menu
+					ul
+						li.has-line
+							span.line
+						li.active.has-sub
+							a(href="#") Về Duy Tân
+						li.has-line
+							span.line
+						li.has-mega
+							a(href="#") Sản phẩm
+							.toggle-sub-menu
+								span.fal.fa-angle-down
+							.mega-menu
+								.mega-menu-container
+									.row
+										-for(i=0;i<4;i++)
+											.col-lg-3.col-sm-6.mega-menu-col
+												.mega-menu-item
+													.mega-menu-item-title Sản phẩm gia dụng
+													.mega-menu-item-body
+														ul
+															li
+																a(href="#") Đồ dùng nhà bếp, bàn ăn
+															li
+																a(href="#") Đồ dùng vệ sinh/ Chăm sóc nhà cửa
+															li
+																a(href="#") Nội thất
+															li
+																a(href="#") Chăm sóc vườn tược
+															li
+																a(href="#") Hàng mẹ & bé
+															li
+																a(href="#") Sản phẩm cao cấp Matsu
+															li
+																a(href="#") Sản phẩm dã ngoại
+															li
+																a(href="#") Nội thất cao cấp Plaxury
+															li
+																a(href="#") Bộ sản phẩm tiện dụng
+						li.has-line
+							span.line
+						li.has-sub
+							a(href="#") E-Catalogue
+							.toggle-sub-menu
+								span.fal.fa-angle-down
+							.sub-menu
+								ul
+									li
+										a(href="#") Khách hàng Doanh nghiệp 
+									li
+										a(href="#") Khách hành Tiêu dùng  
+						li.has-line
+							span.line
+						li
+							a(href="#") Thư viện
+						li.has-line
+							span.line
+						li
+							a(href="#") Phân phối
+						li.has-line
+							span.line
+						li
+							a(href="#") Tin tức
+						li.has-line
+							span.line
+						li
+							a(href="#") Liên hệ
+						li.has-line
+							span.line
+
+.menu-mobile
+	.menu-mobile-header
+		.close-menu
+			span.far.fa-xmark
+	.menu-mobile-body

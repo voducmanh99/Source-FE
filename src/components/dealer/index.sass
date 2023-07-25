@@ -1,0 +1,77 @@
+
+.filter-map
+	.form-group
+		select,input[type="text"]
+			+bg(white)
+		input[type="submit"]
+			border: 0
+		button
+			height: clamp(42px,r(42px),r(64px))
+	+mq-max(lg)
+		padding-bottom: r(20px)
+		border-bottom: 1px solid color(gray-50)
+
+.dealer-result-list
+	height: 100%
+	max-height: r(484px)
+	overflow-y: auto
+	+scrollbars(4px, color(primary-500), color(gray-50))
+	padding-right: r(8px)
+	ul
+		padding-right: r(8px)
+		+row(20px)
+		> *
+			+flex-width(100%)
+			+mq-min(sm)
+				+flex-width(50%)
+		li
+			cursor: pointer
+			.dealer-item
+				padding: r(20px)
+				+bg(white)
+				border-radius: r(12px)
+				+trans-all
+			&.active,&:hover
+				.dealer-item
+					+bg(primary-500)
+				p
+					+text(white)
+					&:before
+						+text(white)
+			p
+				@extend .body-4
+				font-weight: 500
+				&:not(.name)
+					display: flex
+				& + p
+					margin-top: r(8px)
+				&:before
+					font-size: r(16px)
+					font-family: "Font Awesome 6 Pro"
+					font-weight: 400
+					+text(primary-500)
+					flex: 0 0 r(24px)
+					display: block
+			.name
+				@extend .body-2
+				font-weight: 700
+				margin-bottom: r(12px)
+				+text(primary-500)
+				+parent-state(".active")
+					+text(white)
+			.address
+				&:before
+					content: "\f3c5"
+			.phone
+				&:before
+					content: "\f095"
+			.email
+				&:before
+					content: "\f0e0"
+
+.dealer-map
+	iframe
+		width: 100%
+		height: 100%
+		+mq-max(lg)
+			height: r(400px)

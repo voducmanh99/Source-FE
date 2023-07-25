@@ -1,0 +1,27 @@
+section.home-2
+	.container
+		h2.heading-2.text-primary-500.font-bold.mb-lg-15.mb-6 Sản phẩm khuyến mãi
+		.product-slider.position-relative(data-slides="4.25")
+			.swiper-container
+				.swiper-wrapper
+					-for(i=0;i<10;i++)
+						.swiper-slide
+							.product-item
+								.product-item-img
+									figure
+										a(href="#") 
+											img(src="./img/product.png", alt="")
+									a(href="#").product-item-cart
+										span.fal.fa-cart-plus
+										| Đặt hàng
+								.product-item-caption
+									.product-item-title
+										a(href="#") Hũ Gia Vị 100ml
+									.product-item-bottom
+										.product-item-price
+											.product-item-price-promo
+												.product-item-price-discount -30%
+												.product-item-price-old 69.000 vnđ
+											.product-item-price-original 39.000 vnđ
+										.product-item-label
+											span New

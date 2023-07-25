@@ -1,0 +1,36 @@
+.breadcrumb-wrapper
+	+remove(lg, 'max')
+	+bg(primary-50)
+	+text(secondary-200)
+	.breadcrumb
+		padding: r(14px) 0
+		display: flex
+		align-items: center
+		li
+			a
+				+fz-lh(14px,20px)
+				display: flex
+				align-items: center
+				font-weight: 500
+			& + li
+				padding-left: r(12px)
+				display: flex
+				align-items: center
+				&::before
+					content: "\f054"
+					font-family: 'Font Awesome 6 Pro'
+					margin-right: r(12px)
+					font-weight: 300
+					font-size: r(16px)
+					position: relative
+			&:last-child
+				a
+					+text(primary-500)
+			+first(1)
+				a
+					font-size: 0
+					&:before
+						content: '\f015'
+						font-family: 'Font Awesome 6 Pro'
+						+fz-lh(16px,18px)
+						font-weight: 300

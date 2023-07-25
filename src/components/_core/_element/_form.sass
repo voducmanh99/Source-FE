@@ -1,0 +1,73 @@
+.form-group
+	label
+		margin-bottom: r(8px)
+		display: inline-block
+	+all-text-inputs
+		height: clamp(42px,r(42px),r(64px))
+		width: 100%
+		background: transparent
+		border: 1px solid color(gray-100)
+		padding: 0 r(20px)
+		@extend .body-4
+		font-weight: 500
+		+radius(12px)
+		+placeholder
+			+text(gray-300)
+			opacity: 1
+	input[type="password"]
+		height: clamp(42px,r(42px),r(64px)) !important
+	select
+		height: clamp(42px,r(42px),r(64px))
+		width: 100%
+		background: transparent
+		border: 1px solid color(gray-100)
+		padding: 0 r(20px)
+		@extend .body-4
+		font-weight: 500
+		+radius(12px)
+		+text(primary-500)
+		+select-bg($bg: "../img/sl-bg.svg")
+		option
+			+text(gray-900)
+	textarea
+		height: r(142px)
+		padding: r(12px) r(20px)
+
+.frm-btnwrap
+	margin-top: r(20px)
+	text-align: center
+	.label
+		display: none
+
+.frm-btn
+	position: relative
+	display: inline-block
+	margin-left: auto
+	min-width: r(104px)
+	&:before
+		+pseudo
+		+center(Y)
+		right: r(24px)
+		+box(19px,14px)
+		background-image: url(../img/btn-arrow-white.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center
+		pointer-events: none
+	input[type="submit"]
+		+trans-all
+		+bg(primary-400)
+		+text(white)
+		border: 0
+		height: clamp(42px,r(42px),r(64px))
+		width: 100%
+		cursor: pointer
+		font-size: r(16px)
+		font-weight: 500
+		+radius(12px)
+		padding-right: r(50px)
+		padding-left: r(24px)
+
+.wrap-form
+	.row
+		+gap-override(20px)
