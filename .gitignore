@@ -3,3 +3,4 @@ bower_components
 dist
 build
 .DS_Store
+package-lock.json

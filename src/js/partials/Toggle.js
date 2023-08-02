@@ -30,4 +30,4 @@ $(document).click(function(event) {
     if (!$(event.target).closest('.suggestsearch').length) {
       $('.suggestsearch').hide();
     }
-  }); 
+  });

@@ -18,48 +18,6 @@ jQuery(function () {
 
     $.fancybox.defaults.parentEl = "form"
 
-    $('#flipbok_example').hover(
-        function() {
-            // Disable scrolling on body or document
-            $('body').css('overflow', 'hidden');
-            $(document).on('scroll', function () {
-                window.scrollTo(0,0); 
-            });
-        },
-        function() {
-            // Enable scrolling on body or document
-            $('body').css('overflow', 'auto');
-            $(document).off('scroll');
-        }
-    );
-
-    function addFirstColumnClass() {
-        const row = $(".row-computed");
-        let currentTopPosition = null;
-
-        row.find("> *")
-            .removeClass("first-column")
-            .each(function () {
-                const itemTopPosition = $(this).position().top;
-
-                if (
-                    currentTopPosition === null ||
-                    itemTopPosition > currentTopPosition
-                ) {
-                    currentTopPosition = itemTopPosition;
-                    $(this).addClass("first-column");
-                }
-            });
-    }
-
-    // Call the function on document ready
-    addFirstColumnClass();
-
-    // Call the function on window resize
-    $(window).resize(function () {
-        addFirstColumnClass();
-    });
-
     $(".about-nav a").on("click", function (e) {
         scrollToElement($(this).attr("href"), 2000, $(".global-header").height() + $(".about-nav").height());
     });
@@ -72,7 +30,7 @@ jQuery(function () {
     var ms = new MenuSpy(menuSpy, {
         threshold: 80,
     });
-    
+
 });
 
 var scrollToElement = function (el, ms, height) {
