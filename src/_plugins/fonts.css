@@ -1,60 +1,80 @@
 @font-face {
-	font-family: 'Manrope';
+	font-family: 'Unbounded';
+	font-style: normal;
+	font-weight: 200;
+	font-display: auto;
+	font-stretch: normal;
+	src: url(../fonts/Unbounded-normal-200.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Unbounded';
 	font-style: normal;
 	font-weight: 300;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/Manrope-normal-300.woff) format('woff');
+	src: url(../fonts/Unbounded-normal-300.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
 @font-face {
-	font-family: 'Manrope';
+	font-family: 'Unbounded';
 	font-style: normal;
 	font-weight: 400;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/Manrope-normal-400.woff) format('woff');
+	src: url(../fonts/Unbounded-normal-400.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
 @font-face {
-	font-family: 'Manrope';
+	font-family: 'Unbounded';
 	font-style: normal;
 	font-weight: 500;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/Manrope-normal-500.woff) format('woff');
+	src: url(../fonts/Unbounded-normal-500.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
 @font-face {
-	font-family: 'Manrope';
+	font-family: 'Unbounded';
 	font-style: normal;
 	font-weight: 600;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/Manrope-normal-600.woff) format('woff');
+	src: url(../fonts/Unbounded-normal-600.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
 @font-face {
-	font-family: 'Manrope';
+	font-family: 'Unbounded';
 	font-style: normal;
 	font-weight: 700;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/Manrope-normal-700.woff) format('woff');
+	src: url(../fonts/Unbounded-normal-700.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
 @font-face {
-	font-family: 'Manrope';
+	font-family: 'Unbounded';
 	font-style: normal;
 	font-weight: 800;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/Manrope-normal-800.woff) format('woff');
+	src: url(../fonts/Unbounded-normal-800.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Unbounded';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	font-stretch: normal;
+	src: url(../fonts/Unbounded-normal-900.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 
