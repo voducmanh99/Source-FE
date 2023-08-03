@@ -1,25 +1,24 @@
 {
-    "font": [
-        "src/fonts/**"
-    ],
-    "js": [
-        "bower_components/jquery/dist/jquery.js",
-        "bower_components/swiper/dist/js/swiper.js",
-        "src/_plugins/lazyload/lazyload.js",
-        "src/_plugins/mapping.js",
-        "src/_plugins/mapping-listener.js",
-        "src/_plugins/jquery.sticky.js",
-        "src/_plugins/velocity.js",
-        "bower_components/fancybox/dist/jquery.fancybox.js",
-        "src/_plugins/jquery-ui-1.13.2.custom/jquery-ui.js",
-        "bower_components/Tabslet/jquery.tabslet.min.js",
-        "node_modules/menuspy/dist/menuspy.js"
-    ],
-    "css": [
-        "src/_plugins/fonts.css",
-        "src/_plugins/fontawesome.css",
-        "bower_components/swiper/dist/css/swiper.min.css",
-        "bower_components/fancybox/dist/jquery.fancybox.css",
-        "src/_plugins/jquery-ui-1.13.2.custom/jquery-ui.css"
-    ]
+	"font": ["src/fonts/**"],
+	"js": [
+		"bower_components/jquery/dist/jquery.js",
+		"bower_components/swiper/dist/js/swiper.js",
+		"src/_plugins/lazyload/lazyload.js",
+		"src/_plugins/mapping.js",
+		"src/_plugins/mapping-listener.js",
+		"src/_plugins/jquery.sticky.js",
+		"src/_plugins/velocity.js",
+		"bower_components/fancybox/dist/jquery.fancybox.js",
+		"src/_plugins/jquery-ui-1.13.2.custom/jquery-ui.js",
+		"bower_components/Tabslet/jquery.tabslet.min.js",
+		"node_modules/menuspy/dist/menuspy.js"
+	],
+	"css": [
+		"src/_plugins/fonts.css",
+		"src/_plugins/fonts-2.css",
+		"src/_plugins/fontawesome.css",
+		"bower_components/swiper/dist/css/swiper.min.css",
+		"bower_components/fancybox/dist/jquery.fancybox.css",
+		"src/_plugins/jquery-ui-1.13.2.custom/jquery-ui.css"
+	]
 }

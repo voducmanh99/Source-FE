@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Bold.eot');
+    src: url('../fonts/SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SourceSerifPro-Bold.woff2') format('woff2'),
+        url('../fonts/SourceSerifPro-Bold.woff') format('woff'),
+        url('../fonts/SourceSerifPro-Bold.ttf') format('truetype'),
+        url('../fonts/SourceSerifPro-Bold.svg#SourceSerifPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Semibold.eot');
+    src: url('../fonts/SourceSerifPro-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SourceSerifPro-Semibold.woff2') format('woff2'),
+        url('../fonts/SourceSerifPro-Semibold.woff') format('woff'),
+        url('../fonts/SourceSerifPro-Semibold.ttf') format('truetype'),
+        url('../fonts/SourceSerifPro-Semibold.svg#SourceSerifPro-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Regular.eot');
+    src: url('../fonts/SourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSerifPro-Regular.woff') format('woff'),
+        url('../fonts/SourceSerifPro-Regular.ttf') format('truetype'),
+        url('../fonts/SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
